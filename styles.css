@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#navbar {
+  position: fixed;
+  width: 24%;
+  height: 100%;
+  border-right: 3px solid #a8a6a6;
+  z-index: 1;
+}
+
+.docs-title {
+  padding: 10px 0 25px 15px;
+  font-size: 180%;
+  text-align: center;
+}
+
+.divider {
+  position: relative;
+  overflow: scroll;
+}
+
+h3 {
+  font-weight: normal;
+  padding: 15px;
+  padding-left: 20px;
+}
+
+h3 a {
+  font-style: normal;
+  color: #4d4353;
+  text-decoration: none;
+}
+
+header h1 {
+  text-align: left;
+  padding: 10px;
+  margin: 1px;
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.main-section {
+  position: relative;
+  left: 320px;
+}
+
+.main-section p {
+  padding-left: 20px;
+  overflow: visible;
+}
+
+p {
+  padding: 10px;
+}
+
+ul li {
+  padding: 10px;
+}
+
+footer {
+  position: calc(height-20px);
+}
+
+/* On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user */
+@media (min-width: 1080px) {
+  /**/
+}
