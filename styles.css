@@ -3,6 +3,16 @@
   padding: 0;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+body {
+  color: #6b6565;
+  font-size: 18px;
+  overflow-x: hidden;
+}
+
 #navbar {
   position: fixed;
   width: 24%;
@@ -12,14 +22,13 @@
 }
 
 .docs-title {
-  padding: 10px 0 25px 15px;
-  font-size: 180%;
+  padding: 15px 0 25px 15px;
+  font-size: 150%;
   text-align: center;
 }
 
 .divider {
-  position: relative;
-  overflow: scroll;
+  overflow-y: scroll;
 }
 
 h3 {
@@ -35,28 +44,46 @@ h3 a {
 }
 
 header h1 {
-  text-align: left;
   padding: 10px;
-  margin: 1px;
   font-family: 'Noto Sans', sans-serif;
+  color: rgb(10, 10, 10);
 }
 
 .main-section {
+  max-width: 75%;
   position: relative;
-  left: 320px;
+  top: 10px;
+  left: 330px;
 }
 
 .main-section p {
   padding-left: 20px;
-  overflow: visible;
 }
 
 p {
   padding: 10px;
+  max-width: 92%;
 }
 
 ul li {
-  padding: 10px;
+  max-width: 85%;
+  padding-bottom: 7px;
+  position: relative;
+  left: 70px;
+}
+
+ul li li {
+  padding-left: 20px;
+}
+
+code, code pre {
+  padding: 5px 10px;
+  background-color: #eee;
+  font-size: 15px;
+  border-radius: 3px;
+  position: relative;
+  left: 50px;
+  width: fit-content;
 }
 
 footer {
