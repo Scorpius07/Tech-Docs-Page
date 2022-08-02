@@ -5,6 +5,7 @@
 
 html {
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -13,44 +14,38 @@ body {
   overflow-x: hidden;
 }
 
-#navbar {
+nav {
   position: fixed;
   width: 24%;
   height: 100%;
   border-right: 3px solid #a8a6a6;
-  z-index: 1;
-}
-
-#docs-title {
-  position: sticky;
-  padding: 15px 0 25px 15px;
-  font-size: 150%;
-  text-align: center;
-}
-
-#navbar {
   overflow-y: scroll;
-  overflow-x: hidden;
-}
-
-.nav li {
-  text-align: left;
-  list-style: none;
-  font-size: large;
-  font-weight: normal;
-  padding: 15px 0;
-}
-
-.nav li a {
-  font-style: normal;
-  color: #4d4353;
-  text-decoration: none;
+  margin-right: 10px;
 }
 
 h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 15px 0 20px 10px;
+  font-size: 28px;
+  text-align: center;
+  overflow-y: hidden;
+}
+
+nav a {
+  display: block;
+  width: 88%;
+  color: #4d4353;
+  text-decoration: none;
+  padding: 1rem;
+  text-align: center;
+  border-top: 2px solid;
+}
+
+h2 {
   padding: 10px;
   font-family: 'Noto Sans', sans-serif;
   color: rgb(10, 10, 10);
+  font-weight: 600;
 }
 
 .main-section {
@@ -58,15 +53,11 @@ h1 {
   position: relative;
   top: 10px;
   left: 330px;
-  scroll-behavior: smooth;
-}
-
-.main-section p {
-  padding-left: 20px;
+  /* scroll-behavior: smooth;  Not working!*/
 }
 
 p {
-  padding: 10px;
+  padding: 10px 10px 10px 24px;
   max-width: 92%;
 }
 
@@ -77,28 +68,20 @@ ul li {
   left: 70px;
 }
 
-ul li li {
-  padding-left: 20px;
+ul ul li {
+  margin: 5px 0 5px 30px;
 }
 
 code:not(.no-code), code pre {
+  position: relative;
+  left: 50px;
+  width: fit-content; 
   padding: 5px 10px;
   background-color: #eee;
   font-size: 12px;
   border-radius: 3px;
-  position: relative;
-  left: 50px;
-  width: fit-content;
 }
 
-footer {
-  position: absolute;
-  left: 500px;
-  bottom: calc(height-10px);
-  padding: 10px;
-}
-
-/* On regular sized devices (laptops, desktops), the element with id="navbar" should be shown on the left side of the screen and should always be visible to the user */
-@media (min-width: 1080px) {
-  /**/
+#Reference {
+  padding-bottom: 10px;
 }
