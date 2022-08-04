@@ -86,7 +86,7 @@ code:not(.no-code), code pre {
   padding-bottom: 10px;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 769px) {
   body {
     min-width: 400px;
     overflow-x: hidden;
