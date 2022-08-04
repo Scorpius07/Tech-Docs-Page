@@ -88,7 +88,6 @@ code:not(.no-code), code pre {
 
 @media screen and (max-width: 480px) {
   body {
-    min-width: 400px;
     overflow-x: hidden;
   }
 
@@ -96,7 +95,7 @@ code:not(.no-code), code pre {
     position: static;
     margin: 25px auto;
     width: fit-content;
-    height: 500px;
+    height: 475px;
     border: 3px solid #a8a6a6;
     overflow-x: hidden;
   }
