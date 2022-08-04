@@ -85,3 +85,24 @@ code:not(.no-code), code pre {
 #Reference {
   padding-bottom: 10px;
 }
+
+@media screen and (max-width: 800px) {
+  nav {
+    position: static;
+    margin: 25px auto;
+    width: fit-content;
+    height: 500px;
+    overflow-x: hidden;
+    border: 3px solid #a8a6a6;
+  }
+
+  .main-section {
+    position: static;
+    margin: 10px;
+  }
+
+  p {
+    position: static;
+    width: 110%;
+  }
+}
